@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import SplitCall from './Splits-Tags/SplitCall';
+import Counter from './Counter/Counter';
+import TheDate from './Time/TheDate';
+import HelloWorld from './Drills/HelloWorld';
+import Bomb from './Drills/Bomb';
+import Roulette from './Drills/RouletteGun';
+import Tabs from './Tabs/Tabs';
+import tabsProp from './Tabs/tabsProp';
+import Accordion from './state-drills/Accordion';
+import sections from './state-drills/sections'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+function App(){
+  
+  return(
+    <div>
+      <Accordion sections={sections} />
     </div>
-  );
+  )
 }
 
 export default App;
